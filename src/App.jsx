@@ -31,6 +31,15 @@ export const App = () => {
           </Col>
         </Row>
       </Container>
+      <footer className="bg-dark text-white py-4">
+        <Container>
+          <Row>
+            <Col className="text-center">
+              <p>Copyright © 2025 Landing Page Ract.</p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </>
   );
 };

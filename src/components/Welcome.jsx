@@ -1,4 +1,3 @@
-import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
 function Welcome() {
