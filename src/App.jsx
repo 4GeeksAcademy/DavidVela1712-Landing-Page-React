@@ -35,7 +35,7 @@ export const App = () => {
         <Container>
           <Row>
             <Col className="text-center">
-              <p>Copyright © 2025 Landing Page Ract.</p>
+              <p>Copyright © 2025 Landing Page React.</p>
             </Col>
           </Row>
         </Container>
