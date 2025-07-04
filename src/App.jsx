@@ -1,24 +1,36 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { ImageLink } from "./components/ImageLink";
+import NavBar from "./components/NavBar";
+import Welcome from "./components/Welcome";
+import Cards from "./components/Cards";
+import { Container, Row, Col } from 'react-bootstrap';
 
 export const App = () => {
   return (
     <>
-      <div>
-        <ImageLink src={viteLogo} alt={"Vite logo"} href={"https://vite.dev"} />
-        <ImageLink
-          src={reactLogo}
-          alt={"React logo"}
-          href={"https://react.dev"}
-        />
-      </div>
-      <h1>Vite + React</h1>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NavBar />
+      <Container className="p-2">
+        <Row className="mb-3">
+          <Col xs md lg={12}>
+            <Welcome />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={6} lg={3} className="d-flex justify-content-center mb-4">
+            <Cards />
+          </Col>
+          <Col xs={12} md={6} lg={3} className="d-flex justify-content-center mb-4">
+            <Cards />
+          </Col>
+          <Col xs={12} md={6} lg={3} className="d-flex justify-content-center mb-4">
+            <Cards />
+          </Col>
+          <Col xs={12} md={6} lg={3} className="d-flex justify-content-center mb-4">
+            <Cards />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
